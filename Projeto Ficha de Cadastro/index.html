@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Motorista</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h3>Cadastro de Motorista</h3>
+        </div>
+    </header>
+    <form method="" action="">
+        <fieldset>
+            <legend>
+                Dados do Motorista
+            </legend>
+            <label>
+                Nome:
+                <input id="name" name="" type="text" name="" value="" placeholder="Digite o primeiro nome.." minlength="3" maxlength="20" autofocus required />
+            </label>
+            <label>
+                Sobrenome:
+                <input id="second-name" type="text" name="" value="" placeholder="Digite o sobrenome.." minlength="3" maxlength="40" required/> 
+            </label>
+            <label>
+                Nascimento:
+                <input id="birthdate" type="date" name="" value="" required />
+            </label>
+            <br>
+            <label>
+                CPF:
+                <input id="cpf" type="text" name="" value="" placeholder="000.000.000-00" minlength="11" maxlength="14" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="xxx.xxx.xxx-xx"/>
+            </label>
+            <label>
+                RG:
+                <input id="id" type="text" name="" value="" placeholder="Digite o número do RG.." maxlength="12" required /> 
+                
+            </label>
+            <label>
+                Orgão Emissor:
+                <input id="issue" type="text" name="" value="" placeholder="Ex: SSP" maxlength="4" required/>
+                
+            </label>
+            <label>
+                UF:
+                <select>
+                    <option>..</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MG</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>                
+            </label>
+            <br>
+            <label>
+                CNH:
+                <input id="cnh" type="text" name="" value="" placeholder="Nº da habilitação.." maxlength="10" required />
+            </label>
+            <label>
+                Vencimento:
+                <input id="due-date" type="date" name="" value="" required>
+            </label>
+            <br>
+            <label>
+                End:
+                <input id="address" type="text" name="" value="" placeholder="Digite o endereço da residência.." required>
+            </label>
+            <label>
+                Bairro:
+                <input id="district" type="text" name="" value="" placeholder="Bairro.. " required /> 
+            </label>
+            <label>
+                Cep:
+                <input id="cep" type="text" name="" value="" placeholder="00000-000" minlength="9" maxlength="9" required pattern="\d{5}-?\d{3}" title="00000-000" /> 
+            </label>
+            <label>
+                Município:
+                <input id="county" type="text" placeholder="Informe o Município.. " required /> 
+            </label>
+            <label>
+                UF:
+                <select>
+                    <option>..</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MG</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>   
+                </select>
+            </label>
+            <br>
+            <label>
+                Fone:
+                <input id="phone" type="tel" placeholder="(DDD) 00000-0000" required pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}$" title="(xx) xxxx-xxxx"/>
+            </label>
+            <label>
+                Celular:
+                <input id="cellphone" type="tel" name="" value="" placeholder="(DDD) 00000-0000" required pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}$" title="(xx) xxxxx-xxxx"/>
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                Dados do Caminhão:
+            </legend>
+            <label id="truck_type">
+                Tipo:
+                <input type="radio" name="type" value=""><a>Truck</a>
+                <input type="radio" name="type" value=""><a>Bi-Truck</a>
+                <input type="radio" name="type" value=""><a>Cavalo</a>
+            </label>
+            <br>            
+            <label>
+                Modelo:
+                <input id="truck_model" type="text" name="" value=""  required placeholder="Digite a marca e modelo..">
+            </label>
+            <label>
+                Cor: 
+                <input type="text" name="" value="" placeholder="Cor do caminhão..">               
+            </label>
+            <label>
+                Tipo:
+                <select required>
+                    <option>----</option>
+                    <option>4x2</option>
+                    <option>6x2</option>
+                    <option>6x4</option>
+                    <option>8x2</option>
+                </select>
+            </label>
+            <label >
+                Ano:
+                <select name="" id="" required>
+                    <option>----</option>   
+                    <option>2010</option>   
+                    <option>2011</option>   
+                    <option>2012</option>   
+                    <option>2013</option>   
+                    <option>2014</option>   
+                    <option>2015</option>   
+                    <option>2016</option>   
+                    <option>2017</option>   
+                    <option>2018</option>   
+                    <option>2019</option>   
+                    <option>2020</option>   
+                    <option>2021</option>   
+            </select>
+            </label>
+            <br>
+            <label>
+                Placa:
+                <input id="truck_plate" type="text" name="" value="" minlength="7" maxlength="8"  required/>
+            </label>
+            <label>
+                Renavan:
+                <input id="renavan" type="" name="" value="" minlength="11" required/>
+            </label>
+            <label>
+                Chassi:
+                <input id="chassi" type="text" name="" value="" minlength="17" maxlength="17" required/>
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>
+                Dados do Reboque:
+            </legend>     
+            <label>
+                Modelo:
+                <input id="trailer_model" type="text" name="" value=""  required placeholder="Digite a marca e modelo..">
+            </label>
+            <label>
+                Cor: 
+                <input type="text" name="" value="" placeholder="Cor do reboque..">               
+            </label>
+            <label>
+                Qnt de Eixos:
+                <select required>
+                    <option>----</option>
+                    <option>2 Eixos</option>
+                    <option>3 Eixos</option>
+                    <option>4 Eixos</option>
+                    <option>8 Eixos</option>
+                    <option>9 Eixos</option>
+                </select>
+            </label>
+            <label >
+                Ano:
+                <select required>
+                    <option>----</option>   
+                    <option>2010</option>   
+                    <option>2011</option>   
+                    <option>2012</option>   
+                    <option>2013</option>   
+                    <option>2014</option>   
+                    <option>2015</option>   
+                    <option>2016</option>   
+                    <option>2017</option>   
+                    <option>2018</option>   
+                    <option>2019</option>   
+                    <option>2020</option>   
+                    <option>2021</option>   
+            </select>
+            </label>
+            <br>
+            <label>
+                Placa:
+                <input id="trailer_plate" type="text" name="" value="" minlength="7" maxlength="8"  required/>
+            </label>
+            <label>
+                Renavan:
+                <input id="trailer_renavan" type="" name="" value="" minlength="11" required/>
+            </label>
+            <label>
+                Chassi:
+                <input id="trailer_chassi" type="text" name="" value="" minlength="17" maxlength="17" required/>
+            </label>            
+        </fieldset><br><br>
+        <button>Enviar Cadastro</button>
+    </form>
+</body>
+</html>

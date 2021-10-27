@@ -1,0 +1,114 @@
+body{
+    margin: 8px;
+    background-color: #faf6f1;
+}
+fieldset{
+    border-color: #deb887;
+    margin-top: 20px;
+    
+
+}
+legend{
+    font-weight: bold;
+    background-color: rgb(238, 218, 153);
+}
+input{
+    height:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px ;
+    margin-right:30px; 
+    margin-top:20px;   
+    border-color: #deb887;
+}
+select{
+    height:20px;
+    width:58px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px ;
+    margin-right:30px;    
+    border: #deb887 solid 2px;
+}
+a{
+    margin-left:4px;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+.head{
+    width:100%;
+    height:30px;
+    text-align: center;
+    margin-top:5px;
+    border: #000 1px solid;
+    background-color: bisque;  
+}
+.head h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top:5px;
+    color: #000;
+}
+
+#name{
+    width: 200px;
+}
+#second-name{
+    width: 300px;
+}
+#birthdate,
+#due-date{
+    height:17px; 
+}
+#cpf{
+    width: 100px;
+    margin-left:10px;
+    margin-right: 180px;
+}
+#id{
+    width: 100px;
+    margin-right:40px;    
+}
+#issue{
+    width: 45px;
+}
+#cnh{
+    margin-left:5px;
+    margin-right:65px;
+}
+#address{
+    width:300px;
+    margin-left:12px;
+}
+#cep{
+    width:80px;
+}
+#phone{
+    margin-left:5px;
+    margin-right:93px;
+}
+#truck_model,
+#trailer_model{
+    width: 240px;
+}
+#truck_type input{
+    margin:2px;
+    margin-top:10px;
+}
+#traction
+#axel{
+    width: 60px;
+}
+#truck_plate,
+#trailer_plate{
+    width: 70px ;
+    margin-left:15px;
+}
+#renavan,
+#trailer_renavan{
+    width:130px;   
+}
+#chassi
+#trailer_chassi{
+    width:170px;
+}
